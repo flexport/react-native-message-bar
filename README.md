@@ -1,3 +1,6 @@
+# Fork reason
+To support rendering component beside string in showAlertMessage.
+
 # react-native-message-bar
 
 ![npm version](http://img.shields.io/npm/dm/react-native-message-bar.svg)
