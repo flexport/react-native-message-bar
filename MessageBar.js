@@ -405,11 +405,15 @@ class MessageBar extends Component {
 
   renderMessage() {
     if (this.state.message != null) {
-      return (
-        <Text numberOfLines={this.state.messageNumberOfLines} style={this.state.messageStyle}>
-          { this.state.message }
-        </Text>
-      );
+      if (typeof(this.state.message) === "string") {
+        return (
+          <Text numberOfLines={this.state.messageNumberOfLines} style={this.state.messageStyle}>
+            { this.state.message }
+          </Text>
+        );
+      } else {
+        return this.state.message;
+      }
     }
   }
 
